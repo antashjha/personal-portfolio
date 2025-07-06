@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css"/>
+<script src="https://kit.fontawesome.com/ac34fc25fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/logo.png" alt="logo">
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="navMenu">
+                    <li><a href="#home" oneclick="closeMenu()">Home</a></li>
+                    <li><a href="#about" oneclick="closeMenu()">About</a></li>
+                    <li><a href="#services" oneclick="closeMenu()">Services</a></li>
+                    <li><a href="#portfolio" oneclick="closeMenu()">Portfolio</a></li>
+                    <li><a href="#contact" oneclick="closeMenu()">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Antash</span> :)</h1>
+            </div>
+        </div>
+    </div>
+<!---------------------ABOUT------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <div class="terminal-button close"></div>
+                    <div class="terminal-button minimize"></div>
+                    <div class="terminal-button maximize"></div>
+                </div>
+                <div class="terminal-title">antash@portfolio:~</div>
+                <div></div>
+            </div>
+            <div class="terminal-content">
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command">whoami</span>
+                </div>
+                <div class="terminal-line">
+                    <span class="output output-special">Antash Kumar Jha - Full Stack Developer</span>
+                </div>
+                <div class="terminal-line">
+                    <span class="output">Currently crafting digital experiences</span>
+                </div>
+                
+                <div class="terminal-line" style="margin-top: 15px;">
+                    <span class="prompt">$</span>
+                    <span class="command">cat skills.txt</span>
+                </div>
+                <div class="terminal-line">
+                    <span class="output">▸ JavaScript & TypeScript</span>
+                </div>
+                <div class="terminal-line">
+                    <span class="output">▸ React & Node.js</span>
+                </div>
+                <div class="terminal-line">
+                    <span class="output">▸ Python & MongoDB</span>
+                </div>
+                <div class="terminal-line">
+                    <span class="output">▸ UI/UX Design</span>
+                </div>
+                
+                <div class="terminal-line" style="margin-top: 15px;">
+                    <span class="prompt">$</span>
+                    <span class="command">status --current</span>
+                </div>
+                <div class="terminal-line">
+                    <span class="output output-success">✓ Available for new projects</span>
+                </div>
+                <div class="terminal-line">
+                    <span class="output output-success">✓ Open to collaborations</span>
+                </div>
+                <div class="terminal-line">
+                    <span class="output output-success">✓ Ready to innovate</span>
+                </div>
+                
+                <div class="terminal-line" style="margin-top: 15px;">
+                    <span class="prompt">$</span>
+                    <span class="command typing">echo "Let's build something amazing together!"</span>
+                    <span class="cursor"></span>
+                </div>
+            </div>
+            
+            <div class="status-bar">
+                <div class="status-left">
+                    <div class="status-item">
+                        <div class="status-dot"></div>
+                        <span>Online</span>
+                    </div>
+                    <div class="status-item">
+                        <span>Ready</span>
+                    </div>
+                </div>
+                <div class="status-right">
+                    <span>developer@portfolio</span>
+                </div>
+            </div>
+        </div>
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I’m a CSE student with a sharp focus on building real, useful tech.
+                    I care about clarity, systems, and long-term impact. 
+                    No shortcuts—just steady, deliberate progress every day.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="opentab('skills')">SKILLS</p>
+                    <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                    <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>DSA</span><br>Solving algorithmic problems</li>
+                        <li><span>Frontend Dev</span><br>Building responsive websites</li>
+                        <li><span>Git & GitHub</span><br>Version control and collaboration</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Web Intern</span><br>Built landing pages using HTML, CSS, JavaScript</li>
+                        <li><span>Open Source</span><br>Contributed to beginner-friendly GitHub repositories</li>
+                        <li><span>Freelance Projects</span><br>Delivered basic static websites to local clients</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.E CSE</span><br>SLIET, 2024–2028</li>
+                        <li><span>Class 12th</span><br>BSEB – 82%, 2023</li>
+                        <li><span>Class 10th</span><br>CBSE Board – 81%, 2021</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------------SERVICES-------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-connectdevelop"></i>
+                <h2>Web Development</h2>
+                <p>Design and build fast, responsive websites using HTML, CSS, JavaScript, and modern frameworks.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-swatchbook"></i>
+                <h2>UI/UX Design</h2>
+                <p>Create intuitive, user-centered designs for web and mobile interfaces focused on usability and experience.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Problem Solving</h2>
+                <p>Apply data structures and algorithms to solve real-world problems with precision and efficiency.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------PORTFOLIO------------- -->
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-titles">My Work</div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg" alt="work1">
+                <div class="layer">
+                    <h3>Responsive Portfolio Website</h3>
+                    <p>Developed a clean, responsive personal website adaptable across devices using HTML, CSS, and JavaScript.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg" alt="work1">
+                <div class="layer">
+                    <h3>UI/UX Interface Design</h3>
+                    <p>Created intuitive user flows and visually appealing interfaces with focus on user experience and brand identity.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg" alt="work1">
+                <div class="layer">
+                    <h3>Targeted Problem Solving</h3>
+                    <p>Designed and implemented algorithms that solve real-world problems with efficiency and precision using DSA skills.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>                
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-inbox"></i>aryanbharatdwaj200@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9341320141</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/antashjha/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://github.com/antashjha"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/antash-jha-9690a7247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://x.com/AntashJha"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <div id="status-message" class="status-message"></div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2025 Antash.<i class="fa-solid fa-heart-pulse"></i> All rights reserved.</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        function toggleMenu() {
+            var navMenu = document.getElementById("navMenu");
+            navMenu.classList.toggle("active");
+        }
+
+        function closeMenu() {
+            var navMenu = document.getElementById("navMenu");
+            navMenu.classList.remove("active");
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            var navMenu = document.getElementById("navMenu");
+            var menuToggle = document.querySelector('.menu-toggle');
+            var nav = document.querySelector('nav');
+            
+            if (!nav.contains(event.target)) {
+                navMenu.classList.remove("active");
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        // Add active navigation highlighting
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('div[id]');
+            const navLinks = document.querySelectorAll('nav ul li a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+</script>
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz5MpGZXaBanzJJw6Q9ggBnhF5ZWZoDRqbP0X-POeVxFlj29w4ml6gniIPQBa29Ib9P/exec'; // Replace with your actual URL
+const form = document.forms['submit-to-google-sheet'];
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    
+    // Show loading state
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Submitting...';
+    
+    // Create FormData
+    const formData = new FormData(form);
+    
+    // Log form data for debugging
+    console.log('Form data being sent:');
+    for (let [key, value] of formData.entries()) {
+        console.log(key, value);
+    }
+    
+    fetch(scriptURL, { 
+        method: 'POST', 
+        body: formData
+    })
+    .then(response => {
+        console.log('Response:', response);
+        return response.text();
+    })
+    .then(result => {
+        console.log('Success!', result);
+        alert('Thank you! Your message has been sent successfully.');
+        form.reset();
+    })
+    .catch(error => {
+        console.error('Error!', error);
+        alert('Sorry, there was an error. Please try again.');
+    })
+    .finally(() => {
+        // Reset button
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+    });
+});
+</script>
+</body>
+</html>
